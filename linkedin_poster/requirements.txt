@@ -1,0 +1,6 @@
+requests
+feedparser
+python-dotenv
+google-generativeai
+pytz
+schedule

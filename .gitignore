@@ -1,0 +1,47 @@
+# === Secrets & Environment ===
+.env
+!.env.example
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+.venv-*/
+venv/
+
+# === Database ===
+trading_committee.db
+*.db-journal
+
+# === Logs ===
+*.log
+*.txt
+!README.md
+!TELEGRAM_SETUP.md
+!requirements.txt
+
+# === Backtest artifacts ===
+backtest_*.csv
+backtest_*.log
+backtest_*.txt
+bt_summary_out.txt
+schedule_out.txt
+
+# === Runtime state ===
+live_signal_state.json
+factor_cache.json
+shell_ok.txt
+hello_test.txt
+
+# === IDE / OS ===
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
+
+# === Test scripts (not production) ===
+test_rate_limit.py
+test_role.py

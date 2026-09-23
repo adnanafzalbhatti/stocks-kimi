@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: stocks-kimi-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Persist SQLite database across container restarts
+      - bot-data:/app/data
+    environment:
+      - DB_PATH=/app/data/trading_committee.db
+    # Keep the container running (Telegram polling is the main loop)
+    command: ["python", "stock_agent_v3.py", "live"]
+
+volumes:
+  bot-data:
+    driver: local

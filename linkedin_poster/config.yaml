@@ -1,0 +1,23 @@
+# config.yaml
+news_sources:
+  - name: "Telecoms.com"
+    rss: "https://www.telecoms.com/feed/"
+  - name: "FierceWireless"
+    rss: "https://www.fiercewireless.com/rss"
+  - name: "Space.com"
+    rss: "https://www.space.com/rss"
+  - name: "IEEE Spectrum"
+    rss: "https://spectrum.ieee.org/rss/telecommunications"
+
+post_schedule:
+  - day: 1   # Tuesday
+    hour: 10
+    minute: 0
+  - day: 3   # Thursday
+    hour: 10
+    minute: 0
+  - day: 5   # Saturday
+    hour: 10
+    minute: 0
+
+hashtags: "#telco #6G #space #technology"

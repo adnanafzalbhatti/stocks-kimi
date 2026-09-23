@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+*.db
+*.log
+*.sqlite
+.git/
+.gitignore
+*.md
+backtests/
+linkedin_poster/
+live_stdout.log
+live_stderr.log
+start_live.ps1
